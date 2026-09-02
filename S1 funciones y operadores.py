@@ -14,5 +14,6 @@ TIPS EE:
 
 S2 #ALgoritmos, Pasar de pseudocodigo a Programa
 TIPS EE:
-#Usa el nombre de la variable que te dicen en el pseudocodigo <EE>
+#Usa el nombre de la variable que te dicen en el pseudocodigo 
+#Usar < """ > para que se imprima en lineas independientes en la pantalla
 
