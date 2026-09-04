@@ -1,0 +1,27 @@
+3) INICIO 
+
+	Leer radio, altura
+	pi = 3.1416
+	area = radio x radio x pi
+	volumen = área x altura
+
+	Imprimir area, volumen
+
+FIN
+---------------------------------------------------------------------
+
+radio = float(input("Bienvenido, ingresa el radio (metros): "))
+altura = float(input("Bienvenido, ingresa la altura (metros): "))
+
+pi=3.14
+area = (radio**2)*pi
+volumen = area*altura
+
+print(f"""El área de la circunferencia es: {area:.2f} (metros)
+El volumen de la esfera es: {volumen:.2f} (metros)
+Gracias.""")
+
+TIPS EE:
+#El pseudocódigo tiene que respetar el programa
+#Dale valor a tu constate y usala así
+---------------------------------------------------------------------
