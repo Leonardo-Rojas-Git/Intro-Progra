@@ -45,4 +45,4 @@ print(f"La aceleración es {aceleracion:.3f} (m/s)")
 < TIPS EE: >
 #Puedo cambiar los nombres del problemas PERO
 #el nombres del pseudocodigo = Programa
-
+#Unidades = modulo(numero_user, 10) para pseudocodido 
