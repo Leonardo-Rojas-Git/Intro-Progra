@@ -27,4 +27,21 @@ def main(): #OPCIONAL EN EL EE
 
 main() #ENCAPSULAMIENTO OPCIONAL  
 ---------------------------------------------------------------------
+def main():
+
+    fahren = float(input("Ingrese temperatura en Fahrenheit: "))
+    celsius = (fahren - 32) * (5 / 9)
+    print("La temperatura en grados Celsius es: ", celsius)
+    if celsius > 25:
+        print("Esta quemando")
+    elif celsius > 17:
+        print("Es un dia caluroso")
+    elif celsius > 0:
+        print("Es un dia frio")
+    else:
+        print("Esta helando")
+
+main()
+
+<EE TIPS>
 
