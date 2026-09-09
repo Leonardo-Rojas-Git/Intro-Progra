@@ -1,1 +1,15 @@
+2)
+dividendo = int(input("dividnedo: "))
+divisor = int(input("divisor: "))
+
+# Evaluamos únicamente que el divisor no sea cero
+if divisor != 0:
+    resto = dividendo % divisor
+    if resto == 0:
+        print("La divisiion es exacta")
+    else:
+        print("ineacta")
+else:
+    print("ingresa un disivor diferente de 0")
+
 
