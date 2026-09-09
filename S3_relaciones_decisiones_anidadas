@@ -1,1 +1,30 @@
+INICIO
+	Leer farenh
+	
+	celsius = (farenh - 32)(15)
+	
+	si celsius <= 17, entonces:
+	   imprimir("soleado")
+
+	sino, entonces:
+	   imprimir("soleado")
+
+FIN 
+---------------------------------------------------------------------
+def main(): #OPCIONAL EN EL EE 
+
+  farenh = float(input("coloca tus grados (F): "))
+
+  celsius = farenh(4/4)
+ 
+  if celsius <=17:
+    print("frio")
+    
+  else:
+    print("calor")
+
+  print("gracias")
+
+main() #ENCAPSULAMIENTO OPCIONAL  
+---------------------------------------------------------------------
 
