@@ -77,6 +77,18 @@ elif actual < cualquiera:
     print(f"Aún faltan {faltan} años.")
 else:
     print(f"ambos años ingresados son iguales: {actual}")
+5)
+
+
+
+
+
+
+
+
+
+
+
 6)
 INICIO	
 	Leer a, b, c
@@ -90,7 +102,7 @@ INICIO
 		imprimir(r1)
 	sino:
 		r1 = (-1*b + raíz2(valor)) / (2*a)
-		r2 = (-1*b - raíz2(valor)) / (2*a)
+		r2 = (-1*b - raíz2(valor)) / (2*a) 
 FIN
 
 import math
@@ -110,6 +122,9 @@ else:
     r2 = (-1*b - math.sqrt(valor))/(2*a)
     print(f"{r1:.3f}")
     print(f"{r2:.3f}")
+<EE TIPS>
+-No olvidar parentesis
+-No te compliques con el pseudocódigo, no poner importar libreria
 
 
 
