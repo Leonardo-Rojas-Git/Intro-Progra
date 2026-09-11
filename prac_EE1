@@ -122,9 +122,51 @@ else:
     r2 = (-1*b - math.sqrt(valor))/(2*a)
     print(f"{r1:.3f}")
     print(f"{r2:.3f}")
-<EE TIPS>
+7)
+year =int(input("Ingresa el año: "))
+
+if (year % 4 == 0 and year % 100 !=0) or year % 400 == 0:
+    print("bisiesto")
+else:
+    print("no es bisiesto")    
+INICIO
+ 	leer año
+	
+	si ( modulo(año, 4) = 0 y modulo(año, 100 es diferente 0) ) o modulo(año, 400) = 0
+		imprimir("El año no es bisiesto")
+
+	sino, entonces
+		imprimir("El año no es bisiesto")
+FIN
+8)
+docenas = int(input("docenas a comprar: "))
+precio_doc =int(input("precio por docena"))
+
+monto_compra = docenas * precio_doc
+
+if docenas > 3:
+    decuento = monto_compra * 0.15
+    obsequio = docenas -3
+else:
+    descuento = monto_compra * 0.10
+    obsequio= 0
+
+total_paga = monto_compra - descuento 
+
+print(f"monto compra {monto_compra}")
+print(f"decuento {descuento}")
+print(f"total {total_paga}")
+print(f"obsequio {obsequio}")
+
+
+
+
+
+
+<EE TIPS> #Los tips son por clase
 -No olvidar parentesis
 -No te compliques con el pseudocódigo, no poner importar libreria
+-(notacion) < modulo(año, 100 es diferente 0) > equivalente a año % 100 != 0 
 
 
 
