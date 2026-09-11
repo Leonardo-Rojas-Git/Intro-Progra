@@ -77,7 +77,39 @@ elif actual < cualquiera:
     print(f"Aún faltan {faltan} años.")
 else:
     print(f"ambos años ingresados son iguales: {actual}")
+6)
+INICIO	
+	Leer a, b, c
 
+	valor = (b^2)-4*a*c
+	
+	si valor < 0, entonces:
+		imprimir("La ecuación no tiene raíces reales")
+	sino, si valor = 0, entonces:
+		r1 = (-1*b + raíz2(valor)) / (2*a)
+		imprimir(r1)
+	sino:
+		r1 = (-1*b + raíz2(valor)) / (2*a)
+		r2 = (-1*b - raíz2(valor)) / (2*a)
+FIN
+
+import math
+a = int(input("coeficiente a"))
+b = int(input("coeficiente b"))
+c = int(input("coeficiente c"))
+ 
+valor = (b**2)-4*a*c
+
+if valor < 0:
+    print("La ecuación no tiene raíces reales")
+elif valor == 0:
+    r1 = (-1*b + math.sqrt(valor))/(2*a)
+    print(r1)
+else:
+    r1 = (-1*b + math.sqrt(valor))/(2*a)
+    r2 = (-1*b - math.sqrt(valor))/(2*a)
+    print(f"{r1:.3f}")
+    print(f"{r2:.3f}")
 
 
 
