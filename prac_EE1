@@ -1,3 +1,56 @@
+1)
+
+2)
+x1 = 1.5
+resultado1 = (x1**4) + (x1**3) + (2 * (x1**2)) - x1
+print(f"Para x = {x1}, el resultado es: {resultado1}")
+
+x2 = 2.5
+resultado2 = (x2**4) + (x2**3) + (2 * (x2**2)) - x2
+print(f"Para x = {x2}, el resultado es: {resultado2}")
+
+x3 = 3.5
+resultado3 = (x3**4) + (x3**3) + (2 * (x3**2)) - x3
+print(f"Para x = {x3}, el resultado es: {resultado3}")
+
+x4 = 4.5
+resultado4 = (x4**4) + (x4**3) + (2 * (x4**2)) - x4
+print(f"Para x = {x4}, el resultado es: {resultado4}")
+
+3)
+peso_libras = float(input("Ingrese el peso en libras: "))
+estatura_pulgadas = float(input("Ingrese la estatura en pulgadas: "))
+
+peso_kg = peso_libras * 0.4536
+estatura_m = estatura_pulgadas * 0.0254
+
+imc = peso_kg / (estatura_m ** 2)
+
+print(f"El Índice de Masa Corporal (IMC) es: {imc:.2f}")
+
+4)
+n0 = 5      
+e = 2.72    
+t = 5       
+
+n_total = n0 * (e ** (5 * t))
+
+# El problema solicita específicamente los "nuevos" infectados
+nuevos_infectados = n_total - n0
+
+print(f"Total de infectados al final del día 5: {n_total:.2f}")
+print(f"Nuevos infectados reportados: {nuevos_infectados:.2f}")
+
+6)
+c1 = float(input("Cateto 1 en cm: "))
+c2 = float(input("Cateto 2 en cm: "))
+
+if c1 > 0 and c2 > 0:
+    hi = (c1**2 + c2**2)**(1/2)
+    print(f"La hipotenusa es {hi:.4f} cm")
+else:
+    print("Error: Los valores de los catetos deben ser mayores a cero.")
+---------------------------------------------------------------------------------
 2)
 dividendo = int(input("Dividendo: "))
 divisor = int(input("Divisor: "))
@@ -11,6 +64,24 @@ if divisor != 0:
         print("Inexacta.")
 else:
     print("Error: Ingresa un divisor diferente de 0.")
+4)
+
+actual = int(input("Ingrese el año actual: "))
+cualquiera = int(input("Ingrese un año cualquiera: "))
+ 
+if actual > cualquiera:
+    pasado = actual - cualquiera
+    print(f"Pasaron {pasado} años.")
+elif actual < cualquiera:
+    faltan = cualquiera - actual
+    print(f"Aún faltan {faltan} años.")
+else:
+    print(f"ambos años ingresados son iguales: {actual}")
+
+
+
+
+
 
 
 
