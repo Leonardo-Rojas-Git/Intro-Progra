@@ -51,6 +51,16 @@ if c1 > 0 and c2 > 0:
 else:
     print("Error: Los valores de los catetos deben ser mayores a cero.")
 ---------------------------------------------------------------------------------
+1) 
+monto = int(input("Ingrese el gasto (dolares): "))
+
+if 0 < monto and monto <= 100:
+    print("Medio de pago sera: efectivo")
+elif 100 < monto < 300:
+    print("Medio de pago: tarjeta  de débito")
+else:
+    print("Medio de pago: tarjeta de crédito ")
+
 2)
 dividendo = int(input("Dividendo: "))
 divisor = int(input("Divisor: "))
@@ -64,6 +74,7 @@ if divisor != 0:
         print("Inexacta.")
 else:
     print("Error: Ingresa un divisor diferente de 0.")
+
 4)
 
 actual = int(input("Ingrese el año actual: "))
@@ -100,7 +111,7 @@ INICIO
 	sino, si valor = 0, entonces:
 		r1 = (-1*b + raíz2(valor)) / (2*a)
 		imprimir(r1)
-	sino:
+	sino, entonces:
 		r1 = (-1*b + raíz2(valor)) / (2*a)
 		r2 = (-1*b - raíz2(valor)) / (2*a) 
 FIN
@@ -139,24 +150,24 @@ INICIO
 		imprimir("El año no es bisiesto")
 FIN
 8)
-docenas = int(input("docenas a comprar: "))
-precio_doc =int(input("precio por docena"))
+docenas = int(input("Ingrese la cantidad de docenas a comprar: "))
+precio_docena = float(input("Ingrese el precio por docena: "))
 
-monto_compra = docenas * precio_doc
+monto_compra = docenas * precio_docena
 
 if docenas > 3:
-    decuento = monto_compra * 0.15
-    obsequio = docenas -3
+    descuento = monto_compra * 0.15
+    obsequio = docenas - 3
 else:
     descuento = monto_compra * 0.10
-    obsequio= 0
+    obsequio = 0
 
-total_paga = monto_compra - descuento 
+monto_pagar = monto_compra - descuento
 
-print(f"monto compra {monto_compra}")
-print(f"decuento {descuento}")
-print(f"total {total_paga}")
-print(f"obsequio {obsequio}")
+print(f"Monto de la compra: ${monto_compra:.2f}")
+print(f"Monto del descuento: ${descuento:.2f}")
+print(f"Monto a pagar: ${monto_pagar:.2f}")
+print(f"Unidades de obsequio: {obsequio}")
 
 
 
