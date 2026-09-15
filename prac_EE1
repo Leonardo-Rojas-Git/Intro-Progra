@@ -168,8 +168,22 @@ print(f"Monto de la compra: ${monto_compra:.2f}")
 print(f"Monto del descuento: ${descuento:.2f}")
 print(f"Monto a pagar: ${monto_pagar:.2f}")
 print(f"Unidades de obsequio: {obsequio}")
+----------(Parte 2)------------------------
+6) 
+distancia = float(input("Ingrese la distancia total (km): "))
+tiempo = float(input("Ingrese el tiempo empleado (horas): "))
+rendimiento = float(input("Ingrese el rendimiento (km por galón): "))
 
-
+if tiempo == 0:
+    # Cortafuegos: Si el tiempo es 0, avisa y el programa termina aquí con seguridad.
+    print("Error matemático: El tiempo de viaje no puede ser cero.")
+else:
+    # Aritmética directa y limpia
+    v_media = distancia / tiempo
+    galones = distancia / rendimiento
+    # 3. Capa de presentación (Protegida dentro del bloque else)
+    print(f"Velocidad promedio: {v_media:.2f} km/h")
+    print(f"Total de galones consumidos: {galones:.2f}")
 
 
 
@@ -178,7 +192,7 @@ print(f"Unidades de obsequio: {obsequio}")
 -No olvidar parentesis
 -No te compliques con el pseudocódigo, no poner importar libreria
 -(notacion) < modulo(año, 100 es diferente 0) > equivalente a año % 100 != 0 
-
+-Activar papelera (para reutilizar o guardar código
 
 
 
