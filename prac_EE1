@@ -226,7 +226,35 @@ else:
     
     # 4. Capa de presentación
     print(f"Sueldo neto final: S/ {sueldo_neto:.2f}")
+5)
+a = float(input("Intervalo 1 - Límite inferior (a): "))
+b = float(input("Intervalo 1 - Límite superior (b): "))
+c = float(input("Intervalo 2 - Límite inferior (c): "))
+d = float(input("Intervalo 2 - Límite superior (d): "))
 
+# 1. Validación del cortafuegos (Corrección lógica al enunciado)
+# Un intervalo matemático [x, y] solo existe si el inicio es menor o igual al final.
+if a > b or c > d:
+    print("Error: Rangos incorrectos. El límite inferior no puede ser mayor al superior.")
+else:
+    # 2. Lógica de evaluación de intersección
+    # Se intersectan si el fin del primero alcanza el inicio del segundo (b >= c) 
+    # Y simultáneamente, el fin del segundo alcanza el inicio del primero (d >= a)
+    if b >= c and d >= a:
+        print("Sí existe intersección entre los intervalos.")
+    else:
+        print("No existe intersección.")
+6)
+horas = int(input("Horas de estacionamiento: "))
+
+if horas <= 0:
+    print("Error: debe ser mayor a cero.")
+else:
+    if horas == 1: # o h <=1: ?????????
+        total = 5.0
+    else:
+        total = 5.0 + (horas - 1) * 3.0
+    print(f"Total a pagar: S/ {total:.2f}")
 
 <EE TIPS> #Los tips son por clase
 -No olvidar parentesis
