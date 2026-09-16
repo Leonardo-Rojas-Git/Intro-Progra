@@ -202,7 +202,30 @@ else:
     
     # 3. Capa de presentación centralizada
     print(f"Monto a pagar: S/ {monto:.2f}")
+3)
+horas = float(input("Ingrese las horas trabajadas en la semana: "))
 
+# 1. Cortafuegos de validación
+if horas < 0:
+    print("Error: Las horas trabajadas no pueden ser negativas.")
+else:
+    # 2. Lógica escalonada (Tiering) para el sueldo bruto
+    if horas <= 40:
+        sueldo_bruto = horas * 20.0
+    else:
+        # Se pagan las 40 base y se extrae el excedente para la tarifa con recargo
+        sueldo_bruto = (40 * 20.0) + ((horas - 40) * 30.0)
+    
+    # 3. Evaluación secuencial independiente para el descuento
+    if sueldo_bruto > 1000.0:
+        descuento = sueldo_bruto * 0.12
+    else:
+        descuento = 0.0
+        
+    sueldo_neto = sueldo_bruto - descuento
+    
+    # 4. Capa de presentación
+    print(f"Sueldo neto final: S/ {sueldo_neto:.2f}")
 
 
 <EE TIPS> #Los tips son por clase
