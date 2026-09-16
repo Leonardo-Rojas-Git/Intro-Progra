@@ -184,7 +184,24 @@ else:
     # 3. Capa de presentación (Protegida dentro del bloque else)
     print(f"Velocidad promedio: {v_media:.2f} km/h")
     print(f"Total de galones consumidos: {galones:.2f}")
+----------------(2)-----------------------------
+1)
+consumo = float(input("Ingrese el consumo de energía (kWh): "))
 
+# 1. Validación (Cortafuegos defensivo)
+if consumo <= 0:
+    print("Error: El consumo debe ser un valor positivo mayor a cero.")
+else:
+    # 2. Lógica escalonada de tarifas (Tiering)
+    if consumo <= 100:
+        monto = consumo * 0.50
+    else:
+        # Se cobra el bloque base completo (100 * 0.50) + el exceso a tarifa nueva
+        exceso = consumo - 100
+        monto = (100 * 0.50) + (exceso * 0.85)
+    
+    # 3. Capa de presentación centralizada
+    print(f"Monto a pagar: S/ {monto:.2f}")
 
 
 
