@@ -30,3 +30,19 @@ else:
     # 4. Impresión exclusiva al finalizar el bucle (fuera de la indentación del for)
     print(f"Cantidad de múltiplos de 4: {contador_multiplos}")
     print(f"Suma total de los múltiplos: {suma_multiplos}")
+
+<Tips>
+n = int(input("Ingrese un número entero positivo (N): "))
+
+if n <= 0:
+    print("Error: Debe ingresar un número entero positivo mayor a cero.")
+else:
+    contador = 0 
+    acumulador = 0
+    for i in range(1,n+1):
+        if i % 10 == 3:
+            acumulador += i
+            contador += 1
+            
+print(f"{acumulador}")
+print(f"{contador}")
