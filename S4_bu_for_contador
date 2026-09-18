@@ -1,1 +1,11 @@
+Resolver por estructura: 
 
+Iteración de secuencias: Dominio de la función range() con inicio, fin y saltos.
+
+Contadores: Variables que suman +1 cada vez que ocurre un evento dentro del bucle.
+
+Acumuladores: Variables que suman el valor iterado (ej. total += i).
+
+Filtrado interno: Uso de condicionales if/else dentro del bucle para segregar datos.
+
+Variables de estado (Banderas): Variables booleanas que cambian si se cumple una condición extrema durante la iteración.
