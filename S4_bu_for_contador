@@ -9,3 +9,24 @@ Acumuladores: Variables que suman el valor iterado (ej. total += i).
 Filtrado interno: Uso de condicionales if/else dentro del bucle para segregar datos.
 
 Variables de estado (Banderas): Variables booleanas que cambian si se cumple una condición extrema durante la iteración.
+# 1. Entrada de datos
+n = int(input("Ingrese un número entero positivo (N): "))
+
+# Cortafuegos (Buenas prácticas heredadas)
+if n <= 0:
+    print("Error: Debe ingresar un número entero positivo mayor a cero.")
+else:
+    # 2. Declaración requerida antes de iniciar el bucle
+    contador_multiplos = 0
+    suma_multiplos = 0
+    
+    # 3. Bucle for configurado para ser inclusivo con 'N'
+    for i in range(1, n + 1):
+        # Evaluación matemática: Un número es múltiplo de 4 si su residuo es 0
+        if i % 4 == 0:
+            contador_multiplos += 1  # Incrementa en 1 (Contador)
+            suma_multiplos += i      # Acumula el valor actual de 'i' (Acumulador)
+            
+    # 4. Impresión exclusiva al finalizar el bucle (fuera de la indentación del for)
+    print(f"Cantidad de múltiplos de 4: {contador_multiplos}")
+    print(f"Suma total de los múltiplos: {suma_multiplos}")
