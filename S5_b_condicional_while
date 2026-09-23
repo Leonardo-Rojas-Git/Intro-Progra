@@ -1,3 +1,3 @@
 <TIPS>
 for i in range(40, 61, 2):
-    print(i, end=" ") # muevo parámetro para el print end= " "
+    print(i, end=" ") #muevo PARÁMETRO para el print end= " "
