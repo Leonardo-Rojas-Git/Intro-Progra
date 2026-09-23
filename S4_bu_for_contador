@@ -92,3 +92,14 @@ if original == invertido:
     print(original, "es capicúa")
 else:
     print(original, "no es capicúa")
+
+n = int(input("¿Cuántos términos? "))
+
+a = 0
+b = 1
+
+for i in range(n):
+    print(a, end=" ")
+    siguiente = a + b
+    a = b
+    b = siguiente
