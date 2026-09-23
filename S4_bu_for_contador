@@ -93,8 +93,8 @@ if original == invertido:
 else:
     print(original, "no es capicúa")
 
-n = int(input("¿Cuántos términos? "))
-
+°Secuencia FIBONACCI°
+n = int(input("¿Cuántos términos quieres? "))
 a = 0
 b = 1
 
