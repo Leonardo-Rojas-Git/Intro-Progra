@@ -77,3 +77,18 @@ while True:
         break
 
     print("Contraseña incorrecta. Intentos restantes:", 3 - intentos)
+Caso: Determinar si un número es Capicua
+n = int(input("Ingresa un número: "))
+
+original = n
+invertido = 0
+
+while n > 0:
+    digito = n % 10
+    invertido = invertido * 10 + digito
+    n = n // 10
+
+if original == invertido:
+    print(original, "es capicúa")
+else:
+    print(original, "no es capicúa")
