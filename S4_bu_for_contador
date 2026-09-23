@@ -60,7 +60,7 @@ if divisores == 2:
 else:
     print(n, "no es primo")
 
-
+CASO: Usuario tiene 3 intentos para ingresar su contraseña
 clave_correcta = "python123"
 intentos = 0
 
