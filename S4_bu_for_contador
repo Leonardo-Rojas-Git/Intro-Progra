@@ -59,3 +59,21 @@ if divisores == 2:
     print(n, "es primo")
 else:
     print(n, "no es primo")
+
+
+clave_correcta = "python123"
+intentos = 0
+
+while True:
+    clave = input("Ingresa la contraseña: ")
+    intentos = intentos + 1
+
+    if clave == clave_correcta:
+        print("Acceso concedido")
+        break
+
+    if intentos == 3:
+        print("Acceso bloqueado")
+        break
+
+    print("Contraseña incorrecta. Intentos restantes:", 3 - intentos)
