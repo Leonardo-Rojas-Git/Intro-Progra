@@ -1,3 +1,17 @@
-<TIPS>
+#Nuevo: PARÁMETRO para el print ** end= ** " 
 for i in range(40, 61, 2):
-    print(i, end=" ") #muevo PARÁMETRO para el print end= " "
+    print(i, end=" ") 
+
+#Nuevo: LIBRERÍA ** random ** para un número aleatorio
+#Nuevo: ESTILO del print ** n\ ** corre una linea
+import random as rdm
+num = int(input("Ingresa tu número: "))
+suma = 0
+for i in range(1, num+1):
+    aleatorio = rdm.randint(10, 99) #solo usar i para mostrar no en interar
+    print(d, end=" ")
+    suma += aleatorio
+print(f"\nLa suma es {s}") # 
+    
+
+
