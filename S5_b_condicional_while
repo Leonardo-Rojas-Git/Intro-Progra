@@ -13,5 +13,6 @@ for i in range(1, num+1):
     suma += aleatorio
 print(f"\nLa suma es {s}") # 
     
-
+3)
+                                                                                                       
 
