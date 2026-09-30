@@ -1,3 +1,8 @@
+​El Centinela (Iteración Indefinida): El bucle gira hasta que el usuario ingresa un valor clave que "rompe" la condición (ej. ingresar un 0 o un -1 para salir).
+​La Trampa de Validación (Filtro estricto): Encerrar al usuario en un bucle infinito del que no puede salir hasta que ingrese un dato matemáticamente válido.
+​Reducción Matemática (Convergencia): Modificar una variable en cada vuelta hasta que alcance un límite (ej. dividir un número entre 10 repetidamente hasta que llegue a 0).
+​Simulación de Contador (El riesgo de infinito): Usar el while como si fuera un for, declarando un contador externo y sumándole +1 manualmente en cada vuelta para evitar que el programa colapse en un bucle infinito.
+
 #Nuevo: PARÁMETRO para el print ** end= ** " 
 for i in range(40, 61, 2):
     print(i, end=" ") 
