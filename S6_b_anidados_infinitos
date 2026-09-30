@@ -1,1 +1,3 @@
-
+La Matriz Ortogonal (Independencia): El bucle externo controla las filas (Y) y el interno las columnas (X). Sus rangos no se mezclan. (Ej. Procesar píxeles en una pantalla o días en una semana).
+​El Límite Dinámico (Dependencia): El límite del range() del bucle interno es, matemáticamente, la variable iteradora del bucle externo. (Ej. Combinatoria, donde el segundo elemento siempre debe ser mayor al primero).
+​El Reseteo de Estado (Acumulador Local vs Global): La trampa mortal de los anidados. Saber qué variables se inicializan en la línea 1 del programa (Globales) y qué variables se deben inicializar dentro del bucle externo, pero antes del interno (Locales).
