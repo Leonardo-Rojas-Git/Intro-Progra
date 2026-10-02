@@ -19,7 +19,20 @@ for i in range(1,6):
         alea = rm.randint(1,5)
         print(alea, end="  ")
     print()
+3) #Arreglos con i y j
+n = int(input("Arreglo de n: "))
+while( n %2 !=0):  #Primer filtro de dato correcto
+    print("Error")
+    n = int(input("N: "))
+a = n/2             #Variable auxiliar que me da criterio
 
+for i in range(1, n+1):    
+    for j in range(1, n+1):
+        if i <= a:  #Dentro de mi condición el i Significa que el criterio es por fila
+            print("*", end=" ")
+        else:
+            print("o", end=" ")
+    print()
 
 
 
