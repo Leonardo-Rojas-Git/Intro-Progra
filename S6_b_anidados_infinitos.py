@@ -19,3 +19,10 @@ for i in range(1,6):
         alea = rm.randint(1,5)
         print(alea, end="  ")
     print()
+
+
+
+
+
+
+< TIPS EE:>
