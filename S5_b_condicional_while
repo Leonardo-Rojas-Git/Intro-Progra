@@ -14,9 +14,9 @@ num = int(input("Ingresa tu número: "))
 suma = 0
 for i in range(1, num+1):
     aleatorio = rdm.randint(10, 99) #solo usar i para mostrar no en interar
-    print(d, end=" ")
+    print(aleatorio, end=" ")
     suma += aleatorio
-print(f"\nLa suma es {s}") # 
+print(f"\nLa suma es {suma}") # 
     
 3)
                                                                                                        
