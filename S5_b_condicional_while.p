@@ -2,6 +2,8 @@
 ​La Trampa de Validación (Filtro estricto): Encerrar al usuario en un bucle infinito del que no puede salir hasta que ingrese un dato matemáticamente válido.
 ​Reducción Matemática (Convergencia): Modificar una variable en cada vuelta hasta que alcance un límite (ej. dividir un número entre 10 repetidamente hasta que llegue a 0).
 ​Simulación de Contador (El riesgo de infinito): Usar el while como si fuera un for, declarando un contador externo y sumándole +1 manualmente en cada vuelta para evitar que el programa colapse en un bucle infinito.
+#Nuevo continue: como el break pero no de bota, sino que se teletrasporta al inicio del bucle sin leer lo demás
+
 
 #Nuevo: PARÁMETRO para el print ** end= ** " 
 for i in range(40, 61, 2):
@@ -38,4 +40,3 @@ while bandera:
 print(f"Cantidad total de nombres ingresados: {cantidad_nombres}")
 print(f"Nombres guardados: {historial_nombres}")
                                                                                                        
-
