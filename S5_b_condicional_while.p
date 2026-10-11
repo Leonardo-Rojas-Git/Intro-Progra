@@ -39,4 +39,20 @@ while bandera:
 # 3. Capa de presentación unificada (fuera del bucle)
 print(f"Cantidad total de nombres ingresados: {cantidad_nombres}")
 print(f"Nombres guardados: {historial_nombres}")
-                                                                                                       
+
+# ¿Cómo invertir un número contar sus digitos y sumarlos?
+Molde lógico:
+1)
+invertido = 0
+n_1 = n  # Guarda el valor original por si se necesita posteriormente
+contador = 0
+acumulador = 0
+
+while True:
+    a = n % 10
+    acumulador += a
+    invertido = invertido * 10 + a
+    n = n // 10
+    contador += 1
+------------------------------------------------------------------------
+                                                                                                     
