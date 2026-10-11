@@ -16,7 +16,7 @@ for i in range(1, num+1):
     aleatorio = rdm.randint(10, 99) #solo usar i para mostrar no en interar
     print(aleatorio, end=" ")
     suma += aleatorio
-print(f"\nLa suma es {suma}") # 
+print(f"\nLa suma es {suma}") # O # print("\n" f"La suma es {suma}")
 
 CASO: Almacenar nombres y acumulador
 bandera = True
