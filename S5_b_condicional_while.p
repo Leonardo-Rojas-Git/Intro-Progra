@@ -1,7 +1,5 @@
-​El Centinela (Iteración Indefinida): El bucle gira hasta que el usuario ingresa un valor clave que "rompe" la condición (ej. ingresar un 0 o un -1 para salir).
-​La Trampa de Validación (Filtro estricto): Encerrar al usuario en un bucle infinito del que no puede salir hasta que ingrese un dato matemáticamente válido.
-​Reducción Matemática (Convergencia): Modificar una variable en cada vuelta hasta que alcance un límite (ej. dividir un número entre 10 repetidamente hasta que llegue a 0).
-​Simulación de Contador (El riesgo de infinito): Usar el while como si fuera un for, declarando un contador externo y sumándole +1 manualmente en cada vuelta para evitar que el programa colapse en un bucle infinito.
+​El Centinela : solo si el resultado de la condición es F entonces: sale del bucle. si pones and, basta un F para que todo sea F.
+​Aplicación en busqueda binaria
 #Nuevo continue: como el break pero no de bota, sino que se teletrasporta al inicio del bucle sin leer lo demás
 
 
@@ -55,4 +53,46 @@ while True:
     n = n // 10
     contador += 1
 ------------------------------------------------------------------------
-                                                                                                     
+1.1) #Detertor de primos y 
+n = int(input("Ingresa un número: "))
+lista_primos = ""
+while n >= 2:
+    cantidad_divisores = 1 # el n es divisor de SI MISMO
+    divisor = n
+#fin validación input
+    while True:
+        divisor = divisor - 1
+        if divisor == 0:
+            break
+
+        elif n % divisor == 0:
+            cantidad_divisores = cantidad_divisores + 1
+    #Vuelve al segundo while, solo acaba si: divisor == 0 
+    if cantidad_divisores == 2:
+        lista_primos += f" {n}" #automaticamente se convierte a cadena
+
+    n = n - 1 #Como no uso el n ingresado, lo modifico, sino lo igualo a si mismo y me reservo el original
+
+print("Primos encontrados:", lista_primos)
+1.2) #cuantos primos hay desde 2 hasta un n de input
+import math as mth
+while True:
+    n = int(input("Ingresa N: "))
+    if n > 2:
+        break
+    print("N debe ser mayor que 2")
+
+contador = 0
+candidato_a_primo = 2      # candidato: avanza de 2 a N-1
+while candidato_a_primo < n:
+    posible_divisor = 2    # divisor: se reinicia en cada candidato
+    while posible_divisor <= mth.sqrt(candidato_a_primo): # verificación dinámica
+        if candidato_a_primo % posible_divisor == 0:
+            break  # se validó que el número de prueba es divisor → no es primo
+        posible_divisor += 1
+    else:  #(else despues de while) solo se activa si no finalizó por BREAK → primo
+        print(candidato_a_primo , end=" ") # candidato validad
+        contador += 1
+    candidato_a_primo += 1
+
+print(f"\n{contador} primos")
