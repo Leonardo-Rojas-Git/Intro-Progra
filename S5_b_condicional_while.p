@@ -96,3 +96,19 @@ while candidato_a_primo < n:
     candidato_a_primo += 1
 
 print(f"\n{contador} primos")
+5) Multifiguras
+n = int(input("n: "))
+espacios = n - 1                     # 1. primera fila
+asteriscos = 1
+for fila in range(n):
+    for j in range(espacios):
+        print(" ", end="")
+    for j in range(asteriscos):
+        if j == 0 or j == asteriscos - 1 or fila == n - 1:   # 3. qué va en cada posición
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+    espacios -= 1                    # 2. cambio por fila
+    asteriscos += 2
+
