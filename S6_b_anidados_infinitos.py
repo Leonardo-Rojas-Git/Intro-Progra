@@ -96,5 +96,26 @@ for fila in range(n):
     print()
     espacios -= 1                    # 2. cambio por fila
     asteriscos += 2
-
+8.1) fugura completas (pino)
+n = 4
+espacios = n - 1          # primera fila
+asteriscos = 1
+for fila in range(n):
+    for j in range(espacios):
+        print(" ", end="")
+    for j in range(asteriscos):
+        print("*", end="")
+    print()
+    espacios -= 1         # cambio por fila
+    asteriscos += 2
+8.2) figuras con hueco, (la X)
+n = 5
+for i in range(n):
+    for j in range(n):
+        if j == i or j == n - 1 - i:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+    
 < TIPS EE:>
