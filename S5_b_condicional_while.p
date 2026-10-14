@@ -53,7 +53,7 @@ while True:
     n = n // 10
     contador += 1
 ------------------------------------------------------------------------
-1.1) #Detertor de primos y 
+1.1) #Detertor de primos y los muestra
 n = int(input("Ingresa un número: "))
 lista_primos = ""
 while n >= 2:
