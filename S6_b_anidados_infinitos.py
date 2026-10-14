@@ -81,7 +81,20 @@ else:
                 print(" ", end="") # Casilla blanca (espacio) sin salto de línea
         # Salto de línea 
         print()
-
-
+8) Molde de figuras:
+n = int(input("n: "))
+espacios = n - 1                     # 1. primera fila
+asteriscos = 1
+for fila in range(n):
+    for j in range(espacios):
+        print(" ", end="")
+    for j in range(asteriscos):
+        if j == 0 or j == asteriscos - 1 or fila == n - 1:   # 3. qué va en cada posición
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+    espacios -= 1                    # 2. cambio por fila
+    asteriscos += 2
 
 < TIPS EE:>
