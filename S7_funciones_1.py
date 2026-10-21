@@ -3,5 +3,7 @@
 La frontera de la memoría: el valor de una variable solo vive dondee a sido creada, es una función, en otra o fuera.
 Puente de datos: La única forma de hacer operaciones con el valor de salida de la función es con " return ", sino la tipo void (imprimir texto/modificar un estado)
 #Los nombres de las varianbles pueden ser al misma pero tener valores distintos
+#en la arquitectura de la función SIEMPRE los valores por defecto simpre van al final ( pq el usuario rellena los primeros y los ultimos puede omitir
 <Nuevos comandos>
 global: para que la variable tenga el mismo valor donde sea
+
