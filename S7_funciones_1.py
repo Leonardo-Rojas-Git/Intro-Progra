@@ -1,10 +1,7 @@
-#Conceptos:
-
-#Clases de definir una función(4)
-#Ambos con y sin parámetro
-(1) Con retorno
--Al invocarlo despues de hacer la acción regresa al lugar de invocación
-
-(2) Sin retorno
--Si quieres imprimir algo en pantalla
-#Nota: el nombre de variable que usas dentro de la función solo existe ahí, entonces usar el mismo nombre puede ser usado
+#Clases de definir una función(4) #Ambos con y sin parámetro
+<Teoría>
+La frontera de la memoría: el valor de una variable solo vive dondee a sido creada, es una función, en otra o fuera.
+Puente de datos: La única forma de hacer operaciones con el valor de salida de la función es con " return ", sino la tipo void (imprimir texto/modificar un estado)
+#Los nombres de las varianbles pueden ser al misma pero tener valores distintos
+<Nuevos comandos>
+global: para que la variable tenga el mismo valor donde sea
