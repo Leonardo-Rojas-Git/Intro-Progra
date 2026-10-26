@@ -33,8 +33,7 @@ def mostrar_persistencia(numero):
         print("Persistencia multiplicativa: 1 paso")
     else:
         print("Persistencia multiplicativa:", pasos, "pasos")
-
-
+        
 n = 0
 while n <= 0:
     n = int(input("Ingrese un número entero mayor que 0: "))
