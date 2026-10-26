@@ -39,3 +39,19 @@ while n <= 0:
     n = int(input("Ingrese un número entero mayor que 0: "))
 
 mostrar_persistencia(n)
+(3) Suma y conteo de dígitos
+def f_dig(n):
+    contador = 0
+    while n > 0:
+        contador += 1
+        n = n // 10
+    return contador
+
+
+def f_sum(m):
+    acumulador = 0
+    while m > 0:
+        digito = m % 10
+        acumulador = acumulador + digito
+        m = m // 10
+    return acumulador
