@@ -1,6 +1,8 @@
 
 
 <Nuevas .f> = sorted, len, max, min, remove, pop 
+# " el_eliminado = lista.pop(0) " saca el elemento en el índice 0 y se almacena en tu variable
+#" nueva_lista = lista.remove(35) " elimina la primera aparicion del valor 35, y la variable queda con la nueva lista.
 #Las cadenas también se pueden recorrer, pero son inmutables, las listas sí, y comienzan con índice 0
 
 Slicing: " 3:5 " del orden 3 al 4, o sea despues del : es indice excluyente
@@ -23,3 +25,5 @@ while a < len(Lis):
         a = a + 1
 print(Lis)
 (Valor): elminar pares de una lista con while
+
+(1)
