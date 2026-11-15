@@ -7,7 +7,7 @@
 
 Slicing: " 3:5 " del orden 3 al 4, o sea despues del : es indice excluyente
 ( ej. )
-print(meses[::-1]) # invertida 
+print(meses[::-1]) # [Inicio, fin, paso]. paso: Cuántos elementros saltar y en que sentido
 
 (1)
 import random as rm
