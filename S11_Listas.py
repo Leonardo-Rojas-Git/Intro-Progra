@@ -26,4 +26,13 @@ while a < len(Lis):
 print(Lis)
 (Valor): elminar pares de una lista con while
 
-(1)
+
+(2) Cómo encontrar el máximo valor de una lista sin max()
+lista = [15, 19, 1, 20, 2 ]
+# se asumuría que el primero es el mayor
+mayor_valor = lista[0]
+for elemento in lista:
+    # elemento primero es 15, luego, 19... hasta ser 2
+    if elemento > mayor_valor:  
+        #si no se cumple entonces el mayor no se actualiza
+        mayor_valor = elemento
