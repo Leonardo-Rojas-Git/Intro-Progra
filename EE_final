@@ -1,2 +1,59 @@
 2026_1
-(1)
+(1) Cómo conseguir el más alejado del promedio, en empate, el primero en orden de índice. #2 formas
+def analizar_lista(numeros): #numeros una lista 
+#OP1
+    #el promedio es easy
+    # Aplicamos el Patrón de Rastreo que ya conoces
+    mayor_distancia = -1
+    numero_mas_alejado = numeros[0]
+    
+    for i in numeros:
+        # Calculamos qué tan lejos está el número del promedio
+        distancia = abs(i - promedio)
+        
+        # EL SECRETO DEL EMPATE: Al usar estrictamente mayor (>) y no mayor o igual (>=), 
+        # si prom es 10 y hay 0 y 20, se queda con el 0.
+        # Esto cumple automáticamente la regla: "retorna el que aparece primero"
+        # pq lo estoy recorriendo en orden, entonces se queda el que aparece primero
+        if distancia > mayor_distancia:
+            mayor_distancia = distancia
+            numero_mas_alejado = i 
+    return numero_mas_alejado
+
+#OP2
+    maxi = numeros[0]
+    mini = numeros[0]
+    
+    # 1. Un SOLO bucle para rastrear todo (Mucho más eficiente)
+    i = 0
+    while i < len(numeros):
+        if numeros[i] > maxi:
+            maxi = numeros[i]
+        
+        if numeros[i] < mini:
+            mini = numeros[i]
+            
+        i = i + 1 
+        
+    #Calcular distancias (sin abs)
+    distancia_al_mayor = masi - promedio 
+    distancia_al_menor = promedio - mini
+    
+    # 3. Evaluación y Retorno (Devolvemos los números, no las distancias)
+    if distancia_al_mayor > distancia_al_menor:
+        return masi #[cite: 3]
+        
+    elif distancia_al_menor > distancia_al_mayor:
+        return mini #[cite: 3]
+    else:
+        # 4. REGLA DEL EMPATE: Retornar el que aparece primero
+        # Como las distancias son iguales, buscamos qué índice es menor (quién apareció antes)
+        indice_del_mayor = numeros.index(masi)
+        indice_del_menor = numeros.index(mini)
+        
+        if indice_del_mayor < indice_del_menor:
+            return masi 
+        else:
+            return mini  
+(2)
+  
