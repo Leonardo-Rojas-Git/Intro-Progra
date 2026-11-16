@@ -55,5 +55,55 @@ def analizar_lista(numeros): #numeros una lista
             return masi 
         else:
             return mini  
-(2)
-  
+(2) Validacion y calculo matemático
+def validacion():
+    lista = []
+    while True:
+        n = int(input("Ingrese puntaje (-1 para terminar): "))
+        # Primer condicional para que no lo agregue a la lista
+        if n == -1: 
+            return lista  # clave
+        
+        if n >= 0 and n <= 100:
+            lista.append(n)
+        else:
+            print("Puntaje fuera de rango (0 - 100)")
+    
+def desviacion_puntajes(puntajes):
+    N = len(puntajes)
+    promedio = sum(puntajes) / len(puntajes)
+    serie = 0
+    # range(N) recorre desde el índice 0 hasta N-1 (todos los elementos)
+    for i in range(N):
+        serie = serie + (puntajes[i] - promedio)**2  # CLAVE acumular 
+    desvi = ((1 / N) * serie)**(1 / 2)  # ojo paréntesis
+    return desvi
+def main():
+    lista = validacion()  # aquí guardo el valor de la función en una variable pq lo usaré
+    print(f"Lista de puntajes: {lista}")
+    # Formato 2 decimales
+    print(f"Desviacion estandar poblacional: {desviacion_puntajes(lista):.2f}")
+main()
+
+(3) Lista con strings
+def filtrar_por_letra(nombres, letra):
+    n_lista = []
+    for i in nombres: 
+        #  CLAVE  i[-1] 
+        if i[-1] == letra:
+            n_lista.append(i)
+    return n_lista
+    
+lista = []
+while True:
+    n = input("Ingrese nombre (fin para terminar): ")
+    if n == "fin":
+        break
+    else:
+        lista.append(n)
+
+word = input("Ingrese la letra a buscar: ")        
+print(f"Lista de nombres: {lista}")
+#formato salida
+nueva_lista = filtrar_por_letra(lista, word)
+print(f"Nombres que terminan con '{word}': {nueva_lista}")
